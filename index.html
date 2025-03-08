@@ -1,0 +1,47 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Playing Card | Amir hossein</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    
+    <div class="container">
+      <div class="card" style="--i: -5"><img src="04.jpg" alt="" /></div>
+      <div class="card" style="--i: -4"><img src="05.jpg" alt="" /></div>
+      <div class="card" style="--i: -3"><img src="07.jpg" alt="" /></div>
+      <div class="card" style="--i: -2">
+        <img src="c95cfa66-59fb-41c4-887c-4de5279f3cfc.jpg" alt="" />
+      </div>
+      <div class="card" style="--i: -1">
+        <img src="3e161053-a300-41cc-8e05-5ce89da47380.jpg" alt="" />
+      </div>
+      <div class="card" style="--i: 0">
+        <img src="47119bfd-dbfa-4f7b-be8f-19b6f5a9d4f9.jpg" alt="" />
+      </div>
+      <div class="card" style="--i: 1">
+        <img src="b164fcea-62b2-493f-9f26-8593f50742d7.jpg" alt="" />
+      </div>
+      <div class="card" style="--i: 2">
+        <img src="b04bebe1-53a2-4bd5-b26d-768831f9a5a0.jpg" alt="" />
+      </div>
+      <div class="card" style="--i: 3">
+        <img src="cfea4f42-dad2-4014-a47f-03c4185f99e9.jpg" alt="" />
+      </div>
+    </div>
+
+    <script>
+      document.querySelectorAll(".container .card").forEach((card) => {
+        card.addEventListener("mouseover", function () {
+          // حذف کلاس 'active' از تمام کارت‌ها
+          document
+            .querySelectorAll(".container .card")
+            .forEach((c) => c.classList.remove("active"));
+          // اضافه کردن کلاس 'active' به کارت کلیک‌شده
+          card.classList.add("active");
+        });
+      });
+    </script>
+  </body>
+</html>
