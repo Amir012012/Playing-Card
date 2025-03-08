@@ -12,8 +12,8 @@ body {
   background: url("ildki.png");
   overflow: hidden;
   background-size: cover;
-  background-position: center; /* تصویر در مرکز صفحه قرار می‌گیرد */
-  background-repeat: no-repeat; /* تصویر تکرار نمی‌شود */
+  background-position: center; 
+  background-repeat: no-repeat;
 }
 .container {
   position: relative;
@@ -54,10 +54,15 @@ body {
   opacity: 0.3;
 }
 
-/* اضافه کردن کلاس برای استثنا کردن تصویر انتخاب‌شده */
+
 .container:active .card.active img {
-  opacity: 1; /* تصویر انتخاب‌شده ثابت می‌ماند */
+  opacity: 1; 
 }
+img {
+  -webkit-user-drag: none; 
+  user-drag: none;
+}
+
 
 .container .card:active {
   translate: calc(var(--i) * 20px)-50px;
